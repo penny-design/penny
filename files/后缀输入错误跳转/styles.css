@@ -16,40 +16,32 @@
   position:absolute;
   z-index:0;
 }
-#u221_div {
+#u220_img {
   border-width:0px;
   position:absolute;
   left:0px;
   top:0px;
-  width:627px;
-  height:183px;
-  background:inherit;
-  background-color:rgba(255, 223, 37, 1);
-  border:none;
-  border-radius:0px;
-  -moz-box-shadow:5px 5px 5px rgba(0, 0, 0, 0.2);
-  -webkit-box-shadow:5px 5px 5px rgba(0, 0, 0, 0.2);
-  box-shadow:5px 5px 5px rgba(0, 0, 0, 0.2);
-  font-size:18px;
+  width:701px;
+  height:412px;
 }
-#u221 {
+#u220 {
   border-width:0px;
   position:absolute;
-  left:123px;
-  top:74px;
-  width:627px;
-  height:183px;
+  left:399px;
+  top:518px;
+  width:701px;
+  height:412px;
   display:flex;
-  font-size:18px;
+  font-size:36px;
 }
-#u221 .text {
+#u220 .text {
   position:absolute;
-  align-self:flex-start;
-  padding:10px 10px 10px 10px;
+  align-self:center;
+  padding:2px 2px 2px 2px;
   box-sizing:border-box;
   width:100%;
 }
-#u221_text {
+#u220_text {
   border-width:0px;
   word-wrap:break-word;
   text-transform:none;
