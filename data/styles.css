@@ -82,8 +82,13 @@
 }
 .table_cell {
 }
+._线段 {
+}
 .sticky_1 {
   text-align:left;
+}
+.marker {
+  color:#FFFFFF;
 }
 .form_hint {
   color:#999999;
@@ -311,5 +316,7 @@
   text-align:left;
 }
 .box_3 {
+}
+.flow_shape1 {
 }
 textarea, select, input, button { outline: none; }
