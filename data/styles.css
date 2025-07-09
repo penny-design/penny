@@ -87,6 +87,9 @@
 .sticky_1 {
   text-align:left;
 }
+.sticky_2 {
+  text-align:left;
+}
 .marker {
   color:#FFFFFF;
 }
@@ -108,6 +111,8 @@
   text-align:left;
 }
 .line {
+}
+.arrow {
 }
 .heading_1 {
   font-family:'Arial Negreta', 'Arial Normal', 'Arial', sans-serif;
@@ -148,6 +153,8 @@
   font-size:13px;
   color:#000000;
 }
+.menu_item {
+}
 .image {
 }
 .el-button {
@@ -166,7 +173,23 @@
   color:#FFFFFF;
   text-align:center;
 }
+.el-button-primary-plain {
+  font-family:'Arial Normal', 'Arial', sans-serif;
+  font-weight:400;
+  font-style:normal;
+  font-size:14px;
+  color:#409EFF;
+  text-align:center;
+}
 .box_2 {
+}
+.h14-black {
+  font-family:'PingFang SC ', 'PingFang SC', sans-serif;
+  font-weight:400;
+  font-style:normal;
+  font-size:14px;
+  color:#333333;
+  text-align:left;
 }
 .icon {
 }
@@ -277,6 +300,11 @@
   font-style:normal;
   font-size:14px;
   color:#F56C6C;
+  text-align:center;
+}
+.badge {
+  font-size:12px;
+  color:#FFFFFF;
   text-align:center;
 }
 .image1 {
