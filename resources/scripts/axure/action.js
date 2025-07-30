@@ -73,17 +73,14 @@
         }
     }
 
-    var _fireAnimationFromQueue = _action.fireAnimationFromQueue = function(id, type) {
-        _removeAnimationFromQueue(id, type);
+    var _fireAnimationFromQueue = _action.fireAnimationFromQueue = function (id, type) {
+        // Remove the function that was just fired
+        if (animationQueue[id] && animationQueue[id][type]) $ax.splice(animationQueue[id][type], 0, 1);
 
         // Fire the next func if there is one
         var func = getAnimation(id, type);
         if(func && !_checkFireActionGroup(id, type, func)) func();
     };
-
-    var _removeAnimationFromQueue = _action.removeAnimationFromQueue = function(id, type) {
-        if(animationQueue[id] && animationQueue[id][type]) $ax.splice(animationQueue[id][type], 0, 1);
-    }
 
     var _checkFireActionGroup = function(id, type, func) {
         var group = actionToActionGroups[id];
@@ -414,30 +411,18 @@
             }
 
             if(url) {
-                let useStartHtml = shouldUseStartHtml(action);
-                if(useStartHtml) {
-                    //use start.html to load player
-                    url = urlWithStartHtml(url);
-                    //collapse player for popup
-                    if(action.linkType == "popup") url = urlWithCollapseSitemap(url);
-                }
-                
-                //set useGlobalVarNameInUrl to true to use GLOBAL_VAR_NAME in the url, so player knows how to parse it
-                //without this, we are assuming everything after '#' are global vars 
                 if(action.linkType == "popup") {
                     $ax.navigate({
                         url: url,
                         target: action.linkType,
                         includeVariables: includeVars,
-                        popupOptions: action.popup,
-                        useGlobalVarNameInUrl : useStartHtml
+                        popupOptions: action.popup
                     });
                 } else {
                     $ax.navigate({
                         url: url,
                         target: action.linkType,
-                        includeVariables: includeVars,
-                        useGlobalVarNameInUrl : useStartHtml
+                        includeVariables: includeVars
                     });
                 }
             }
@@ -446,24 +431,6 @@
 
         _dispatchAction(eventInfo, actions, index + 1);
     };
-    
-    //use start.html will add a player to the prototype
-    var shouldUseStartHtml = function(linkAction) {
-        return linkAction.target.targetType == 'page' //only adding player for page, not external links
-               && (linkAction.linkType == "popup" || linkAction.linkType == "new") //only add for popup and new tabs
-               && $axure.utils.isInPlayer() //allow user to view without player (maybe useful for user testing)
-               && !$axure.utils.isShareApp() //share app use special handling on its link, add start.html breaks the handling
-    }
-    
-    var urlWithStartHtml = function(url) {
-        var pageName = url.substring(0, url.lastIndexOf('.html'));
-        var pageHash = $axure.utils.setHashStringVar(START_URL_NAME, PAGE_URL_NAME, pageName);
-        return START_URL_NAME + pageHash;
-    }
-    
-    var urlWithCollapseSitemap = function(url) {
-        return url + '&' + SITEMAP_COLLAPSE_VAR_NAME + '=' + SITEMAP_COLLAPSE_VALUE;
-    }
 
     var _includeVars = function(target, eventInfo) {
         if(target.includeVariables) return true;

@@ -16,7 +16,7 @@
   position:absolute;
   z-index:0;
 }
-#u490_div {
+#u488_div {
   border-width:0px;
   position:absolute;
   left:0px;
@@ -30,13 +30,13 @@
   -moz-box-shadow:none;
   -webkit-box-shadow:none;
   box-shadow:none;
-  font-family:'Arial Negreta', 'Arial Normal', 'Arial', sans-serif;
+  font-family:'Arial Negreta', 'Arial Normal', 'Arial';
   font-weight:700;
   font-style:normal;
   font-size:48px;
   text-align:center;
 }
-#u490 {
+#u488 {
   border-width:0px;
   position:absolute;
   left:514px;
@@ -44,20 +44,20 @@
   width:773px;
   height:51px;
   display:flex;
-  font-family:'Arial Negreta', 'Arial Normal', 'Arial', sans-serif;
+  font-family:'Arial Negreta', 'Arial Normal', 'Arial';
   font-weight:700;
   font-style:normal;
   font-size:48px;
   text-align:center;
 }
-#u490 .text {
+#u488 .text {
   position:absolute;
   align-self:flex-start;
   padding:0px 0px 0px 0px;
   box-sizing:border-box;
   width:100%;
 }
-#u490_text {
+#u488_text {
   border-width:0px;
   word-wrap:break-word;
   text-transform:none;

@@ -1,5 +1,5 @@
 ﻿.ax_default {
-  font-family:'Arial Normal', 'Arial', sans-serif;
+  font-family:'Arial Normal', 'Arial';
   font-weight:400;
   font-style:normal;
   font-size:13px;
@@ -13,7 +13,7 @@
 .box_1 {
 }
 ._形状 {
-  font-family:'Arial Negreta', 'Arial Normal', 'Arial', sans-serif;
+  font-family:'Arial Negreta', 'Arial Normal', 'Arial';
   font-weight:700;
   font-style:normal;
   font-size:20px;
@@ -29,41 +29,41 @@
   color:#FFFFFF;
 }
 ._一级标题 {
-  font-family:'Arial Normal', 'Arial', sans-serif;
+  font-family:'Arial Normal', 'Arial';
   font-weight:bold;
   font-style:normal;
   font-size:32px;
   text-align:left;
 }
 ._二级标题 {
-  font-family:'Arial Normal', 'Arial', sans-serif;
+  font-family:'Arial Normal', 'Arial';
   font-weight:bold;
   font-style:normal;
   font-size:24px;
   text-align:left;
 }
 ._三级标题 {
-  font-family:'Arial Normal', 'Arial', sans-serif;
+  font-family:'Arial Normal', 'Arial';
   font-weight:bold;
   font-style:normal;
   font-size:18px;
   text-align:left;
 }
 ._四级标题 {
-  font-family:'Arial Normal', 'Arial', sans-serif;
+  font-family:'Arial Normal', 'Arial';
   font-weight:bold;
   font-style:normal;
   font-size:14px;
   text-align:left;
 }
 ._五级标题 {
-  font-family:'Arial Normal', 'Arial', sans-serif;
+  font-family:'Arial Normal', 'Arial';
   font-weight:bold;
   font-style:normal;
   text-align:left;
 }
 ._六级标题 {
-  font-family:'Arial Normal', 'Arial', sans-serif;
+  font-family:'Arial Normal', 'Arial';
   font-weight:bold;
   font-style:normal;
   font-size:10px;
@@ -76,7 +76,15 @@
   color:#000000;
   text-align:left;
 }
+.text_area {
+  color:#000000;
+  text-align:left;
+}
 .droplist {
+  color:#000000;
+  text-align:left;
+}
+.list_box {
   color:#000000;
   text-align:left;
 }
@@ -107,6 +115,8 @@
 }
 ._连接 {
 }
+.snapshot {
+}
 .paragraph {
   text-align:left;
 }
@@ -115,21 +125,21 @@
 .arrow {
 }
 .heading_1 {
-  font-family:'Arial Negreta', 'Arial Normal', 'Arial', sans-serif;
+  font-family:'Arial Negreta', 'Arial Normal', 'Arial';
   font-weight:700;
   font-style:normal;
   font-size:32px;
   text-align:left;
 }
 .heading_2 {
-  font-family:'Arial Negreta', 'Arial Normal', 'Arial', sans-serif;
+  font-family:'Arial Negreta', 'Arial Normal', 'Arial';
   font-weight:700;
   font-style:normal;
   font-size:24px;
   text-align:left;
 }
 .label {
-  font-family:'Arial Normal', 'Arial', sans-serif;
+  font-family:'Arial Normal', 'Arial';
   font-weight:400;
   font-style:normal;
   font-size:14px;
@@ -147,7 +157,7 @@
 .placeholder {
 }
 .table_cell1 {
-  font-family:'Arial Normal', 'Arial', sans-serif;
+  font-family:'Arial Normal', 'Arial';
   font-weight:normal;
   font-style:normal;
   font-size:13px;
@@ -158,7 +168,7 @@
 .image {
 }
 .el-button {
-  font-family:'Arial Normal', 'Arial', sans-serif;
+  font-family:'Arial Normal', 'Arial';
   font-weight:400;
   font-style:normal;
   font-size:14px;
@@ -166,7 +176,7 @@
   text-align:center;
 }
 .el-button-primary {
-  font-family:'Arial Normal', 'Arial', sans-serif;
+  font-family:'Arial Normal', 'Arial';
   font-weight:400;
   font-style:normal;
   font-size:14px;
@@ -174,7 +184,7 @@
   text-align:center;
 }
 .el-button-primary-plain {
-  font-family:'Arial Normal', 'Arial', sans-serif;
+  font-family:'Arial Normal', 'Arial';
   font-weight:400;
   font-style:normal;
   font-size:14px;
@@ -184,7 +194,7 @@
 .box_2 {
 }
 .h14-black {
-  font-family:'PingFang SC ', 'PingFang SC', sans-serif;
+  font-family:'PingFangSC-Regular', 'PingFang SC';
   font-weight:400;
   font-style:normal;
   font-size:14px;
@@ -211,7 +221,7 @@
   color:#333333;
 }
 .radio-label-check {
-  font-family:'PingFang SC ', 'PingFang SC', sans-serif;
+  font-family:'PingFangSC-Regular', 'PingFang SC';
   font-weight:400;
   font-style:normal;
   font-size:14px;
@@ -219,7 +229,7 @@
   text-align:left;
 }
 .radio-label-uncheck {
-  font-family:'PingFang SC ', 'PingFang SC', sans-serif;
+  font-family:'PingFangSC-Regular', 'PingFang SC';
   font-weight:400;
   font-style:normal;
   font-size:14px;
@@ -229,7 +239,7 @@
 .checkbox-check {
 }
 .checkbox-label-check {
-  font-family:'PingFang SC ', 'PingFang SC', sans-serif;
+  font-family:'PingFangSC-Regular', 'PingFang SC';
   font-weight:400;
   font-style:normal;
   font-size:14px;
@@ -239,7 +249,7 @@
 .checkbox-uncheck {
 }
 .checkbox-label-uncheck {
-  font-family:'PingFang SC ', 'PingFang SC', sans-serif;
+  font-family:'PingFangSC-Regular', 'PingFang SC';
   font-weight:400;
   font-style:normal;
   font-size:14px;
@@ -247,7 +257,7 @@
   text-align:left;
 }
 .input-placeholder {
-  font-family:'PingFang SC ', 'PingFang SC', sans-serif;
+  font-family:'PingFangSC-Regular', 'PingFang SC';
   font-weight:400;
   font-style:normal;
   font-size:14px;
@@ -255,7 +265,7 @@
   text-align:left;
 }
 .input-textarea {
-  font-family:'PingFang SC ', 'PingFang SC', sans-serif;
+  font-family:'PingFangSC-Regular', 'PingFang SC';
   font-weight:400;
   font-style:normal;
   font-size:14px;
@@ -263,7 +273,7 @@
   text-align:left;
 }
 .tag {
-  font-family:'PingFang SC ', 'PingFang SC', sans-serif;
+  font-family:'PingFangSC-Regular', 'PingFang SC';
   font-weight:400;
   font-style:normal;
   font-size:14px;
@@ -271,7 +281,7 @@
   text-align:center;
 }
 .tag-success {
-  font-family:'Arial Normal', 'Arial', sans-serif;
+  font-family:'Arial Normal', 'Arial';
   font-weight:400;
   font-style:normal;
   font-size:14px;
@@ -279,7 +289,7 @@
   text-align:center;
 }
 .tag-warning {
-  font-family:'PingFang SC ', 'PingFang SC', sans-serif;
+  font-family:'PingFangSC-Regular', 'PingFang SC';
   font-weight:400;
   font-style:normal;
   font-size:14px;
@@ -287,7 +297,7 @@
   text-align:center;
 }
 .tag-info {
-  font-family:'PingFang SC ', 'PingFang SC', sans-serif;
+  font-family:'PingFangSC-Regular', 'PingFang SC';
   font-weight:400;
   font-style:normal;
   font-size:14px;
@@ -295,7 +305,7 @@
   text-align:center;
 }
 .tag-danger {
-  font-family:'PingFang SC ', 'PingFang SC', sans-serif;
+  font-family:'PingFangSC-Regular', 'PingFang SC';
   font-weight:400;
   font-style:normal;
   font-size:14px;
@@ -313,7 +323,7 @@
 .vertical_line {
 }
 .iconfont {
-  font-family:'iconfont ', 'iconfont', sans-serif;
+  font-family:'iconfont Normal', 'iconfont';
   font-weight:400;
   font-style:normal;
   font-size:18px;
@@ -323,21 +333,21 @@
   text-align:left;
 }
 .heading_11 {
-  font-family:'Arial Normal', 'Arial', sans-serif;
+  font-family:'Arial Normal', 'Arial';
   font-weight:bold;
   font-style:normal;
   font-size:32px;
   text-align:left;
 }
 .heading_21 {
-  font-family:'Arial Normal', 'Arial', sans-serif;
+  font-family:'Arial Normal', 'Arial';
   font-weight:bold;
   font-style:normal;
   font-size:24px;
   text-align:left;
 }
 .heading_3 {
-  font-family:'Arial Normal', 'Arial', sans-serif;
+  font-family:'Arial Normal', 'Arial';
   font-weight:bold;
   font-style:normal;
   font-size:18px;

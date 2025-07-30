@@ -108,31 +108,7 @@
         //set ref visibility for ref of flow shape, if that exists
         var ref = document.getElementById(elementId + '_ref');
         if(ref) _visibility.SetVisible(ref, options.value);
-
-        if(options.value && !MOBILE_DEVICE && $ax.adaptive.isDeviceMode()) _updateMobileScrollForWidgetShown(axObj);
     };
-
-    var _updateMobileScrollForWidgetShown = function(widget) {
-        var isPanel = $ax.public.fn.IsDynamicPanel(widget.type);
-        var isLayer = $ax.public.fn.IsLayer(widget.type);
-        if (isPanel) {
-            var elementId = $id(widget);
-            var stateId = $ax.repeater.applySuffixToElementId(elementId, '_state0');
-            $ax.dynamicPanelManager.updateMobileScroll(elementId, stateId, true);
-            if (!widget.diagrams) return;
-            for (var i = 0; i < widget.diagrams.length; ++i) {
-                var diagram = widget.diagrams[i];
-                if (!diagram.objects) continue;
-                for (var j = 0; j < diagram.objects.length; ++j) {
-                    _updateMobileScrollForWidgetShown(diagram.objects[j]);
-                }
-            }
-        } else if (isLayer) {
-            for (var i = 0; i < widget.objs.length; ++i) {
-                _updateMobileScrollForWidgetShown(widget.objs[i]);
-            }
-        }
-    }
 
     var _setVisibility = function(parentId, childId, options, preserveScroll) {
         var wrapped = $jobj(childId);
@@ -582,16 +558,6 @@
         return '';
     };
 
-    $ax.visibility.GetCurrentPanelDiagram = function (id) {
-        var obj = $obj(id);
-        if ($ax.public.fn.IsDynamicPanel(obj.type) && obj.diagrams && obj.diagrams.length > 0) {
-            var stateId = $ax.visibility.GetPanelState(id);
-            var stateLabel = $jobj(stateId).data('label');
-            return obj.diagrams.find(x => x.label === stateLabel);
-        }
-        return null;
-    };
-
     var containerCount = {};
     $ax.visibility.SetPanelState = function(id, stateId, easingOut, directionOut, durationOut, easingIn, directionIn, durationIn, showWhenSet) {
         var show = !$ax.visibility.IsIdVisible(id) && showWhenSet;
@@ -663,7 +629,7 @@
             $ax.event.leavingState(oldStateId);
             if (hasEasing) _popContainer(id, true);
 
-            $ax.dynamicPanelManager.updateMobileScroll(id, stateId, true);
+            $ax.dynamicPanelManager.updateMobileScroll(id, stateId);
         };
         // Must do state out first, so if we cull by new state, location is correct
         _setVisibility(id, oldStateId, {
